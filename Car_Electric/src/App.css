@@ -1,0 +1,74 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.UserAndMenu {
+  display: flex;
+  justify-content: space-between; /* מפזר את האלמנטים לקצוות */
+  align-items: center;
+  width: 100%; /* פריסה על כל הרוחב */
+  background-color: lightgray;
+  padding: 10px 20px;
+}
+
+.welcome-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.vehicle-text {
+  display: flex;
+  align-items: center;
+
+  gap: 10px; 
+  font-size: 18px;
+  font-weight: bold;
+
+
+}
+.vehicle-select {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #007bff; /* מסגרת בצבע כמו הכפתורים */
+  border-radius: 5px; /* עיגול פינות */
+  background-color: white;
+  color: #007bff; /* צבע טקסט */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+}
+
+.vehicle-select:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 10px; 
+}
+
+.Profile-btn, .logout-btn, .buttons-container a {
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.logout-btn {
+  background-color: #dc3545; 
+}
