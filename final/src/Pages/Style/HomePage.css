@@ -1,0 +1,119 @@
+/* סגנון כללי */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* תפריט עליון */
+.top-menu {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+.user-info p{
+    background-color: white;
+    color: #007bff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.menu-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.menu-buttons select {
+    border-radius: 5px;
+    border: none;
+}
+.menu-buttons button, .menu-buttons a {
+    background-color: white;
+    color: #007bff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-buttons button:hover, .menu-buttons a:hover {
+    background-color: #f0f0f0;
+}
+
+.logout-btn {
+    background-color: red !important; /* עדיף להשתמש ב- !important כדי לדרוס את הערכים   */
+    color: white !important;
+}
+
+.logout-btn:hover {
+    background-color: darkred !important;
+}
+
+/* מפה */
+.map-container {
+    margin-top: 60px;
+}
+/* עיצוב כללי של ה- select */
+select {
+    background-color: white;
+    color:  #007bff;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* עיצוב בעת ריחוף */
+select:hover {
+    border-color: #0056b3;
+    background-color: #f0f0f0;
+}
+
+/* עיצוב כאשר הוא בפוקוס */
+select:focus {
+    border-color: #ff9800;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(255, 152, 0, 0.5);
+}
+
+/* עיצוב האופציות שבתוך ה-select */
+select option {
+    background: white;
+    color: #333;
+    font-size: 14px;
+    padding: 10px;
+}
+
+/* אופציה שנבחרה */
+select option:checked {
+    background-color: #007bff;
+    color: white;
+}
+
